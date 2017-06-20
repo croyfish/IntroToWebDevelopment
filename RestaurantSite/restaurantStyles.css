@@ -5,3 +5,25 @@
 h1 {
     font-family: 'Comic Sans MS';
 }
+
+a {
+  text-decoration: underline;
+  font-weight: none;
+}
+
+a:link {
+  color: Green;
+}
+
+a:visited {
+  color: Red;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:active {
+  text-decoration: none;
+}
