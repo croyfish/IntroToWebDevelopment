@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/JavaScript" src="auditionPractice.js"></script>
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+<!--<link rel="stylesheet" type="text/css" href="auditionPRacticeStyles.css">-->
+
+<style>
+    div {
+        border-style: solid;
+        border-width: 1px;
+    }
+</style>
+
+</head>
+
+<body>
+
+<form name="evenNumbers" onsubmit="return validateItems();" class="form-inline"> 
+<div class="container-fluid">
+    
+    <div class="row">
+        <div class="col-sm-12"><h1>Audition Practice</h1></div>
+    </div>
+
+
+    <div class="row">
+        <div class="form-group col-sm-6 text-right">      
+                <label for "startingNumber">Starting Number</label>
+                <input type="number" class="form-control" id="startingNumber"></input>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="form-group col-sm-6 text-right">
+                <label for="endingNumber" margin-right="20px">Ending Number</label>
+                <input type="number" class="form-control" id="endingNumber"></input>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group col-sm-6 text-right">
+                <label for="step">Step</label>
+                <input type="number" class="form-control" id="step"></input>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 text-center">
+        <button type="submit" id="submitButton" class="btn btn-default">Display Evens</button></div>
+    </div>
+
+</div>
+</form>
+
+<p id="results" style="display:none;">
+<text>Here are the even numbers between </text>
+<text id="starting"></text>
+<text> and </text>
+<text id="ending"></text>
+<text> by </text>
+<text id="stepsize"></text>
+<text>'s.</text><br>
+<text id="evenresults"></text>
+</p>
+
+
+
+
+</body>
+</html>
